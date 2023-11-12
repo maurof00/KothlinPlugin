@@ -1,0 +1,9 @@
+name: MyFirstKtPlugin
+version: '${project.version}'
+main: it.mauro.myfirstktplugin.MyFirstKtPlugin
+api-version: '1.19'
+commands:
+  gmc:
+    description: Gamemode creative
+  tp:
+    description: Teleport
