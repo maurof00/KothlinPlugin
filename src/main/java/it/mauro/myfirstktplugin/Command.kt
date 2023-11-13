@@ -13,7 +13,7 @@ class Command : CommandExecutor {
 
         if(sender.hasPermission("myplugin.gamemode") && sender is Player) {
             sender.gameMode = GameMode.CREATIVE
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&bGamemode cambiata in &3%gamemode%").replace("%gamemode%", sender.gameMode.toString()))
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&bGamemode cambiata in &3${sender.gameMode.toString()}"))
         }else{
             sender.sendMessage("${ChatColor.RED}Non puoi eseguire questo comando")
         }
